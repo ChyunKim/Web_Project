@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 화면</title>
+<link rel="stylesheet" href="LoginStyle.css"></link>
+<link rel="stylesheet" href="MainStyle.css"></link>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<img src ="image/hallymlogo.png">
+			<div class="menu">
+				<ul>
+					<li> 홈 </li>
+					<li> 게시판 </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+	<div class="content">
+	<img src ="image/hallym.png">
+	<form method= post action = Login.jsp>
+		<div class="form-input">
+			<input type="text" name = "userID" placeholder=" Enter ID">
+		</div>
+		<div class="form-input">
+			<input type="password" name = "userPassword" placeholder=" Enter Password">
+		</div>
+		<p></p>
+		<input type="submit" name ="submit" value = "로그인" class = "button" >
+		<br><br>
+		<br><a href="Join.html"> 회원가입 </a>		
+	</form>
+	</div>
+	
+	
+</body>
+</html>

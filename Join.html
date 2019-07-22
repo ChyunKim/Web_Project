@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 화면</title>
+<link rel="stylesheet" href="LoginStyle.css"></link>
+</head>
+<body>
+	<div class="contentJoin">
+	<img src ="image/hallym.png">
+	<form method= post action = Join.jsp>
+		<div class="form-input">
+			<input type="text" name = "userID" placeholder=" 아이디">
+		</div>
+		<div class="form-input">
+			<input type="password" name = "userPassword" placeholder=" 비밀번호">
+		</div>
+		<div class="form-input">
+			<input type="text" name = "userName" placeholder=" 이름">
+		</div>
+		<p></p>
+		<div class="form-input" style="text-align: center; ">
+			<input type="radio" name = "userGender" value = "학생" checked > 학생
+			<input type="radio" name = "userGender" value = "교직원" > 교직원
+		</div>
+		<p></p>
+		<div class="form-input">
+			<input type="email" name = "userEmail" placeholder=" 예) abc@naver.com">
+		</div>
+		<input type="submit" name ="submit" value = "가입하기" class = "button" >
+		<br><br>	
+	</form>
+	</div>
+</body>
+</html>

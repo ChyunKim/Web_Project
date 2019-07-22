@@ -1,0 +1,91 @@
+/* 
+	login.html 화면의 디자인을 위해 LoginStyle.css 
+	Join.html 화면의 디자인도 동일
+	전체적인 화면구성과 로그인에 필요한 박스에 대한 디자인	
+*/
+
+@charset "UTF-8";									/* 한글지원을 위해 UTF-8로 */
+
+/* 전체적인 바디 style을 설정 */
+body{					
+	margin: 0 auto;									/* 페이지를 중앙정렬로  */
+	background-image: url(image/main.png);			/* 기본 바탕이 되는 이미지 불러오기 */
+	background-size: 100% 800px;					/* background 이미지 사진 사이즈 조정 */
+}
+
+/*  content style 디자인 */
+.content{					
+	width: 500px;									/* content박스의 사이즈가 500px를 차지하도록 함 */
+	height: 380px;									/* 높이는 400px를 차지하도록 함 */
+	text-align: center;								/* 중간에 위치하도록 함 */
+	background-color: rgba(234,234,234,0.3);		/* 박스의 색상지정한뒤 opacity는 0.3으로 함 */	
+	border-radius: 10px;							/* 박스 테두리의 둥근정도를 조정 */
+	margin: 0 auto;									/* 페이지 중간에 위치하도록 함 */
+	margin-top: 250px;								/* 위에 margin이 250px만큼 띄우도록 함 */
+}
+
+.contentJoin{					
+	width: 500px;									/* content박스의 사이즈가 500px를 차지하도록 함 */
+	height: 480px;									/* 높이는 400px를 차지하도록 함 */
+	text-align: center;								/* 중간에 위치하도록 함 */
+	background-color: rgba(234,234,234,0.3);		/* 박스의 색상지정한뒤 opacity는 0.3으로 함 */	
+	border-radius: 10px;							/* 박스 테두리의 둥근정도를 조정 */
+	margin: 0 auto;									/* 페이지 중간에 위치하도록 함 */
+	margin-top: 150px;								/* 위에 margin이 120px만큼 띄우도록 함 */
+}
+
+
+/* Login에서의 img에 대한 style */ 
+.content img {	
+	width: 200px;									/* width,height 크기 조정 */
+	height:150px;
+	margin: 0 auto;
+	margin-top:-90px;								/* 위의 content보다 90px위에서 시작하도록 함 */		
+	margin-bottom: 40px;							/* img 40px 밑에 다른 style이 오도록 함 */
+}
+
+.contentJoin img{
+	width: 200px;									/* width,height 크기 조정 */
+	height:150px;
+	margin: 0 auto;
+	margin-top:-60px;								/* 위의 content보다 90px위에서 시작하도록 함 */		
+	margin-bottom: 20px;							/* img 40px 밑에 다른 style이 오도록 함 */
+}
+
+/* 
+	Login input박스에 대한 style 
+	input type = "text" 와  "password" 스타일만을 지정
+	input type = "submit"과  "button" 은 스타일을 다르게 지정하기 위해서 type을 명시해줌	
+*/
+input[type="text"],input[type="password"],input[type="email"]{			/* input에 해당하는 text와 password만의 style을 지정 */
+	 height: 45px;									/* input박스 width,height 크기 설정 */
+	 width: 300px;
+	 font-size: 18px;								/* 박스내의 fontsize는 18px이 되도록 함 */
+	 margin-bottom: 10px;							/* input박스 10px 밑에 다른 style이 오도록 함 */
+}
+
+/* Login submit button에 대한 style */
+.button{
+	height: 45px;									/*  width,height 크기 설정 */
+	width: 295px;
+	font-size: 18px;								/* 버튼 내의 fontsize는 18px이 되도록 함 */
+	margin: 0 auto;
+	margin-bottom: 10px;							/* 10px 밑에 다른 style이 오도록 함 */
+	font-weight: bold;								/* 글씨는 두껍게 나오도록 함 */	
+	text-align: center;								/* 버튼 내 글씨 가운데로 지정 */
+	background-color: #37696A;						/* 버튼 색상 지정 */
+	border: none;									/* 버튼 테두리 없도록 */
+	border-radius: 5px;								/* 버튼 테두리의 둥근정도를 조정 */
+	color: #fff;									/* 버튼 내 글씨 색상 지정 */
+}
+
+
+/* 
+	Login a href의 태그의 style 지정 
+	'회원정보 찾기' 에 대한 style
+*/
+a{
+	margin-top:10px;								/* 위의 10px 띄어서 시작하도록 함 */
+	color: #37696A;									/* 글씨 색상은 blue */
+	font-weight: bold;								/* 글씨는 두껍게 나오도록 함 */
+}
